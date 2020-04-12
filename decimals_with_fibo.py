@@ -1,13 +1,13 @@
 from decimal import Decimal, getcontext
+from math import sqrt
+
 
 getcontext().prec = 100_000_000
 getcontext().Emax = 100_000_00
 
-import numpy as np
-
 
 def a(n):
-    d = Decimal(np.sqrt(5))
+    d = Decimal(sqrt(5))
 
     Phi = (1 + d) / 2
     phi = (1 - d) / 2
